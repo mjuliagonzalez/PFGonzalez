@@ -1,0 +1,39 @@
+// galeria
+.galeria {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  
+  .galerias-img {
+    display: flex;
+    width: 500px;
+    height: 400px;
+
+    img {
+      min-width: 0;
+      flex: 1 1 10px;
+      object-fit: cover;
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+    img:hover {
+      flex: 1 1 280px;
+      opacity:1;
+    }
+  }
+  .galerias-txt {
+    width: 70%;
+    line-height: 2;
+    
+    h3 {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+}
+

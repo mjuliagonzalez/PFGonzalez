@@ -1,0 +1,37 @@
+
+.card{
+
+  .card-body{
+
+    .card-boton {
+      background: $colorbtn;
+      cursor: pointer;
+      border: none;
+      padding: 8px 18px;
+      color: $colorfsecundary;
+      font-weight: bold;
+      position: relative;
+      border-radius: 12px;
+    }
+  }
+}
+
+
+.form2__bton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    display: inline-block;
+    background-color: $colorbtn;
+    color: $colorfterciary;
+    padding: 10px 14px;
+    margin: 20px 10px;
+    border-radius: 12px;
+    font-family: $stylefont;  
+    font-size: 1rem;
+    border: 0;
+    font-weight: 600;
+  }
+}

@@ -4,19 +4,21 @@
     <!-- METADATOS -->
     <meta charset="UTF-8">
     <meta name="author" content="Juliana Gonzalez">
-    <meta name="description" content="Web de Cuidado Capilar">
-    <meta name="keywords" content="Alisados, Nutricion Capilar, Hidratacion">
+    <!-- META DESCRIPCION -->
+    <meta name="description" content="Lisos Web de Cuidado Capilar, el mejor Balayage de Orlando con productos sustetables sin pruebas animales.">
+    <!-- META PALABRAS CLAVES -->
+    <meta name="keywords" content="Balayage, Coloracion, Sin Formol,Alisados, Nutricion Capilar, Hidratacion">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITULO -->
     <title>Balayage Fantasia</title>
     <!-- FABICON -->
-    <link rel="icon" type="image/x-icon" href="./assets/icons8-hair-dryer-32.png">
+    <link rel="icon" type="image/x-icon" href="../assets/icons8-hair-dryer-32.png">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 <body>
   <header>
@@ -57,36 +59,42 @@
   </header>
   <!-- MAIN -->
   <main>
-<!-- ENCABEZADO -->
-    <div class="encabezado">
-      <img src="../assets/encabezados/bannerSobreMi.png" class="img-fluid" alt="Sobre Mí">
-      <h1>Balayage Fantasia</h1>
+    <!-- ENCABEZADO -->
+    <div class="hero">
+      <img src="../assets/encabezados/bannerServicios.png" class="img-fluid" alt="Nutrición Capilar">
+      <h1>Coloracion Fantasia</h1>
     </div>
-<!-- DETALLE DE SERVICIOS -->
-    <section class="productos">
-      <img src="../assets/productos/productoBalayage.png" class="img-fluid" alt="Balayage">
-    </section>
-    <section class="sobre-mi">
-      <div class="container">
-        <div class="row justify-content-md-center text-center">
-          <div class="col-md-8 sm-parrafo productos-detalle">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptas quod temporibus, molestias voluptates laborum sint consectetur eos laboriosam amet eveniet, non esse a minima, pariatur error nesciunt. Magni, numquam!
-              Inventore explicabo ullam doloribus ipsa consectetur? 
-            </p>
-            <h3 class="productos-beneficios">
-              Beneficios
-            </h3>
-            <ul>
-              <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-              <li> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-            </ul>
-            <a href="../pages/cotiza.html" class="btn card-boton">¡Cotiza Aqui!</a>
+    <!-- DETALLE DE SERVICIOS -->
+        <section class="container seccion-servicios">
+          <div class="row seccion-producto">
+            <div class="col-12 col-md-8 producto-imagen">
+              <div class="row ">
+                <img class="col-12" src="../assets/productos/fotoproductobalayage.png" alt="Balayage">
+              </div>
+            </div>
+    
+            <div class="col seccion-informacion">
+              <h2> <span>B</span>alayage <span>F</span>antasy</h2>
+              <h3>Desde $130,00</h3>
+              <p> El valor dependera del largo de tu cabellera!</p>
+              <div class="descripcion">
+                <h4> Bondades</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, asperiores. Animi eum, exercitationem perspiciatis repellat, quas facere autem cum labore voluptatibus modi magnam! Quod minima aliquam corrupti voluptate consequatur enim!</p>
+                <ul>
+                  <li>Organico</li>
+                  <li>Colores Vivos</li>
+                  <li>Hipoalergenico</li>
+                </ul>
+                <h4> Aplicación </h4>
+                <p> Tiempo estimado 120 min. (Puede variar dependiendo el largo y el volumen del cabello) </p>
+                <div class="form2__bton">
+                  <input type="submit" value="Agendar Cita">
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+        
   </main>
 <!-- FOOTER -->
   <footer class="seccion-footer">
@@ -107,7 +115,7 @@
       </a>
     </div>
     <div class="firma-footer">
-      <p>PreEntrega 2 Enero 2023. Diseñado por <span>Juliana Gonzalez &#169;
+      <p>PreEntrega 3 Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
       </span></p>
   </div>
   </footer>

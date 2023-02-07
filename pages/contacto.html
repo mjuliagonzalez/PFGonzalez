@@ -4,19 +4,22 @@
     <!-- METADATOS -->
     <meta charset="UTF-8">
     <meta name="author" content="Juliana Gonzalez">
-    <meta name="description" content="Web de Cuidado Capilar">
-    <meta name="keywords" content="Alisados, Nutricion Capilar, Hidratacion">
+    <!-- META DESCRIPCION -->
+    <meta name="description" content=" Lisos Servicios Cuidado Capilar, envianos tu consulta y a la brevedad te responderemos!">
+    <!-- META PALABRAS CLAVES -->
+    <meta name="keywords" content="Alisados,Regeneracion Capilar, Belleza, Productos Organicos, Nutricion Capilar, Hidratacion, Melenas sanas, Contactanos">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITULO -->
-    <title>Contacto</title>
+    <title>¡Enviame tu consulta! | Contacto</title>
     <!-- FABICON -->
-    <link rel="icon" type="image/x-icon" href="./assets/icons8-hair-dryer-32.png">
+    <link rel="icon" type="image/x-icon" href="../assets/icons8-hair-dryer-32.png">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 <body>
   <header>
@@ -58,51 +61,48 @@
 
   <!-- MAIN -->
   <main>
-<!-- ENCABEZADO -->
-    <div class="encabezado">
+<!-- HERO ENCABEZADO -->
+    <div class="hero">
       <img src="../assets/encabezados/bannerContacto.png" class="img-fluid" alt="Contacto">
       <h1>Contacto</h1>
     </div>
   <!-- FORMULARIO DE CONTACTO  -->
-      <section class="formularios">
-          <form action="" class="form">
-          <fieldset>
-              <div class="form__contenido">
-                  <label for="nombre">Nombre</label>
-                  <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
-              </div>
-              <div class="form__contenido">
-                  <label for="apellido">Apellido</label>
-                  <input type="text" name="apellido" placeholder="Ingresa tu apellido">
-              </div>
-              <div class="form__contenido">
-                  <label for="number">Numero de telefono</label>
-                  <input type="tel" name="number" placeholder="(Codigo de area)Numero" id="" required>
-              </div>
-              <div class="form__contenido">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="" placeholder="Ingresa aqui tu email">
-              </div>
-              <div class="form__contenido">
-                  <label for="mensaje">Comentario</label>
-                  <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe aqui tu mensaje!"></textarea>
-              </div>
-              <div class="form__btn">
-                  <input type="submit" value="Enviar">
-              </div>
-          </fieldset>
-          </form>
+          <section class="contacto-form">
+              <div class="container-fluid">
+                <div class="row">
+                  
+                  <div class="form-group col-md-12 col-lg-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu nombre"  aria-label="Nombre" required>
+                  </div>
+                  
+                  <div class="form-group col-md-12 col-lg-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu apellido" aria-label="Apellido" required>
+                  </div>   
+                
+                  <div class="form-group col-md-7 col-lg-7">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" placeholder="Ingresa aqui tu email" aria-label="Email" required>
+                  </div> 
+                
+                  <div class="form-group col-md-5 col-lg-5">
+                    <label for="number">Telefono</label>
+                    <input type="text" class="form-control" placeholder="(Codigo de area)Numero" aria-label="Telefono"required>
+                  </div> 
 
-  <!-- MAPA -->
-  <div class="mapa">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224444.75442458867!2d-81.5074809977732!3d28.481073837826887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1670877560354!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="mapa__body">
-              <h3>Zona que cubrimos!</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat sunt est harum aperiam nisi eius voluptatem consequuntur saepe, architecto expedita quasi di</p>
-          </div>
-  </div>
-  </div>
-  </section>
+                  <div class="form-group col-md-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje!"></textarea>
+                  </div>
+                
+                  <div class="form2__bton form-group">
+                    <a href="#"><input type="submit" value="Enviar"> </a>
+                    <input type="reset" value="Borrar">
+                  </div>
+                </div>
+              </div>
+            </section>
   </main>
 <!-- FOOTER -->
   <footer class="seccion-footer">
@@ -123,7 +123,7 @@
       </a>
     </div>
     <div class="firma-footer">
-      <p>PreEntrega 2 Enero 2023. Diseñado por <span>Juliana Gonzalez &#169;
+      <p>PreEntrega 3 Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
       </span></p>
   </div>
   </footer>

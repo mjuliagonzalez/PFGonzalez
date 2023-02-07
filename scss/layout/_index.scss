@@ -1,0 +1,204 @@
+// carrusel
+#carouselExampleCaptions img {
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption { 
+  .banner-titulo {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 400;
+    text-shadow: 4px 4px 5px $colorfprimary;
+    text-transform: uppercase;
+  }
+  .banner-titulo {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 400;
+    text-shadow: 4px 4px 5px $colorfprimary;
+    text-transform: uppercase;
+  }
+  .banner-subtitulo {
+    font-size: calc(1.575rem + 3.9vw);
+    font-weight: 400;
+    text-shadow: 0px 2px 5px $colorfprimary;
+    text-transform: uppercase;
+  }
+}
+// tarjetas infomativas
+.card-group {
+  padding: 20px 0px;
+  letter-spacing: 1px;
+  clear: both;
+  border-radius: 0%;
+  border: 0;
+  background-image: url(../assets/seccioninfo.png);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  .card {
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    background-color: $colorsecundary;
+
+    .bi {
+      text-align: center;
+      font-size: 2.5em;
+    }
+    .card-body{
+
+      .card-title {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+// servicios
+.services{
+
+  .seccion-row {
+    padding-top: 1rem;
+  }
+  .card-servicios {
+    /* width: 30rem; */
+    height: 100%;
+    background-color: $colorbg;
+}
+}
+
+// reseñas
+.gallery-titulo {
+  font-size: 3rem;
+  margin-top: 1em;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px $colorfsecundary;
+}
+
+.gallery {
+padding-bottom: 3em;
+padding-top: 1em;
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-auto-rows: 192px;
+grid-template-areas:
+"img1 img2 img3 img3 img4 img5"
+"img1 img6 img3 img3 img4 img5"
+;
+gap: 0.8em;
+
+  .gallery-picture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 3em;
+      background:$colorbtn;
+      font-family: $stylefont;
+      display: flex;
+      font-style: oblique;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.25s;
+
+
+      .overlay-resena {
+        color: $colorfsecundary;
+        font-size: 1.10em;
+        margin-top:  0.25em; 
+      }
+
+      .overlay-cite {
+        color: $colorfsecundary;
+        font-weight: bold;
+        font-size: 1em;
+      }
+    }
+  }
+
+  .overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s ;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay:hover > * {
+    transform: translateY(0);
+  }
+
+  .gallery-img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .gallery-picture--g1{
+    grid-area: img1;
+  }
+
+  .gallery-picture--g2{
+    grid-area: img2;
+  }
+
+  .gallery-picture--g3{
+    grid-area: img3;
+  }
+
+  .gallery-picture--g4{
+    grid-area: img4;
+  }
+
+  .gallery-picture--g5{
+    grid-area: img5;
+  }
+
+  .gallery-picture--g6{
+    grid-area: img6;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .gallery-titulo {
+    font-size: 2.5rem;
+  }
+  
+  .gallery {
+    padding-bottom: 3em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 192px;
+    grid-template-areas:
+    "img1 img2"
+    "img3 img3"
+    "img4 img5"
+    "img6 img6";
+    gap: 0.8em;
+    font-size: 13px;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+
+
+    }
