@@ -18,84 +18,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
 <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
-      <div class="container-fluid">
-        <a class=" nav-titulo" href="#">LISOS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LISOS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/sobremi.html">SOBRE MÍ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/cotiza.html">COTIZA EN LINEA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-              </li>
+<nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-text" href="index.html">
+      <img src="./assets/iconos/LogoLisosColorBlue.png" alt="Logo Lisos">
+      LISOS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title nav-text" id="offcanvasNavbarLabel">MENÚ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active nav-text" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="./pages/sobremi.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-text" href="./pages/servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICIOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-text" href="./pages/alisado.html">ALISADO BIOMOLECULAR</a></li>
+              <li><a class="dropdown-item nav-text" href="./pages/balayage.html">BALAYAGE FANTASY</a></li>
+              <li><a class="dropdown-item nav-text" href="./pages/hidratacion.html">HIDRATACION PROFUNDA</a></li>
             </ul>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="./pages/cotiza.html">COTIZA EN LINEA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+          
+        </ul>
       </div>
-    </nav>
-  </header>
-  <!-- MAIN -->
-  <main>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- MAIN -->
+<main>
 <!-- CARRUSEL INICIO -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/carrusel/carruselliso3.png" class="d-block " alt="Banner De Bienvenida">
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="banner-titulo">LISOS</h1>
-            <p class="banner-parrafo">¡Magia para tú cabello!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/carrusel/carrusellisos2.png" class="d-block " alt="Cotiza en Linea">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class= "banner-subtitulo">cotiza en linea</h2>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/carrusel/carruselliso1.png" class="d-block " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5 class= "banner-subtitulo">Nutrición capilar</h5>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>  
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/carrusel/bannerCarrusel1.png" class="carousel-img" alt="Gif Card Promocional">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/carrusel/bannerCarrusel3.png" class="carousel-img" alt="Producto Estrella Alisado Biomolecular">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/carrusel/bannerCarrusel4.png" class="carousel-img" alt="Lisos">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <!-- TARJETAS INFORMATIVAS -->
     <div class="card-group">
       <div class="card auto-fit">
@@ -121,7 +116,7 @@
       </div>
     </div>
 <!-- SERVICIOS -->
-    <section class=" services container-fluid">
+    <section class="services container-fluid">
       <div class="row seccion-row">
         <div class="col-md-4">
           <div class="card card-servicios">
@@ -129,7 +124,7 @@
           <div class="card-body">
             <h5 class="card-title">Alisado Biomolecular</h5>
             <p class="card-text">Ideal para cabellos rizados con poco volumen, ondas débiles y finas, cabellos castigados, encrespados o difícil manejo..</p>
-            <a href="./pages/servicios.html" class="btn card-boton">¡Lo Quiero!</a>
+            <a href="./pages/alisado.html" class="btn card-boton">¡Lo Quiero!</a>
           </div>
         </div>
       </div>
@@ -139,7 +134,7 @@
           <div class="card-body">
             <h5 class="card-title">Hidratacion Reconstructiva</h5>
             <p class="card-text">Devuelve los nutrientes y la oleosidad natural del cabello, perdidos por la exposición diaria a factores externos..</p>
-            <a href="./pages/servicios.html" class="btn card-boton">¡Lo Quiero!</a>
+            <a href="./pages/hidratacion.html" class="btn card-boton">¡Lo Quiero!</a>
           </div>
         </div>
       </div>
@@ -149,12 +144,13 @@
           <div class="card-body">
             <h5 class="card-title">Balayage Fantasy</h5>
             <p class="card-text">La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como aclarado por el sol, con tonos más claros en las puntas.</p>
-            <a href="./pages/servicios.html" class="btn card-boton">¡Lo Quiero!</a>
+            <a href="./pages/balayage.html" class="btn card-boton">¡Lo Quiero!</a>
           </div>
         </div>
       </div>
     </div>
     </section>
+    
 <!-- RESEÑAS INSTAGRAM -->
     <h2 class="gallery-titulo">#LisosLovers</h2>
 
@@ -216,17 +212,16 @@
   </main>
 <!-- FOOTER -->
   <footer class="seccion-footer">
-    
-    <img class="logo-footer" src="./assets/iconos/logolisos.png" alt="Logo Lisos">
+    <img class="logo-footer" src="./assets/iconos/LogoLisosNew .png" alt="Logo Lisos">
     <p class="parrafo-footer">¡No hay viaje que no te cambie algo, <span>atrevete</span>!</p>
     <div class="iconos-footer d-flex flex-wrap align-items-center justify-content-center ">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/lisos.ve/" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-instagram"></i>
       </a>
       <a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer">
       <i class="bi bi-facebook"></i>
       </a>
-      <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
+      <a href="https://www.whatsapp.com/"target="_blank" rel="noopener noreferrer">
         <i class="bi bi-whatsapp"></i>
       </a>
       <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
@@ -234,10 +229,13 @@
       </a>
     </div>
     <div class="firma-footer">
-      <p>PreEntrega 3 Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
+      <div class="container">
+      <p>PF Gonzalez Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
       </span></p>
+      </div>
   </div>
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 </html>

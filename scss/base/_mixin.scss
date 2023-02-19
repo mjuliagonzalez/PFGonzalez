@@ -1,0 +1,8 @@
+@mixin tamanio ($alto, $ancho){
+    width: $ancho;
+    height: $alto;
+}
+@mixin imagen ($of, $borde){
+    object-fit:$of;
+    border: $borde;
+}

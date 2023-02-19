@@ -18,44 +18,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
 <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
-      <div class="container-fluid">
-        <a class=" nav-titulo" href="#">LISOS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LISOS</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sobremi.html">SOBRE MÍ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./servicios.html">SERVICIOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./cotiza.html">COTIZA EN LINEA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<nav class="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-text" href="#">
+      <img src="../assets/iconos/LogoLisosColorBlue.png" alt="Logo Lisos">
+      LISOS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title nav-text" id="offcanvasNavbarLabel">MENÚ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-    </nav>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active nav-text" aria-current="page" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="sobremi.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-text" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICIOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-text" href="alisado.html">ALISADO BIOMOLECULAR</a></li>
+              <li><a class="dropdown-item nav-text" href="balayage.html">BALAYAGE FANTASY</a></li>
+              <li><a class="dropdown-item nav-text" href="hidratacion.html">HIDRATACION PROFUNDA</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="cotiza.html">COTIZA EN LINEA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-text" href="contacto.html">CONTACTO</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
   </header>
   <!-- MAIN -->
   <main>
@@ -79,7 +89,7 @@
           <p> El valor dependera del largo de tu cabellera!</p>
           <div class="descripcion">
             <h4> Bondades</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, asperiores. Animi eum, exercitationem perspiciatis repellat, quas facere autem cum labore voluptatibus modi magnam! Quod minima aliquam corrupti voluptate consequatur enim!</p>
+            <p>Primer Alisado que trabaja con Células Madres, su poder altamente regenerador devuelve la masa capilar perdida por agresiones externas o procesos químicos. Recupera el cabello dañado desde la primera aplicación y lo transforma a nivel interno y externo, dejando el cabello perfectamente lacio y sano por más de 3 meses. </p>
             <ul>
               <li>Organico</li>
               <li>Nutritivo</li>
@@ -97,28 +107,30 @@
     
   </main>
 <!-- FOOTER -->
-  <footer class="seccion-footer">
-    <img class="logo-footer" src="../assets/iconos/logolisos.png" alt="Logo Lisos">
-    <p class="parrafo-footer">¡No hay viaje que no te cambie algo, <span>atrevete</span>!</p>
-    <div class="iconos-footer d-flex flex-wrap align-items-center justify-content-center ">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-facebook"></i>
-      </a>
-      <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-      <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-google"></i>
-      </a>
-    </div>
-    <div class="firma-footer">
-      <p>PreEntrega 3 Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
-      </span></p>
+<footer class="seccion-footer">
+  <img class="logo-footer" src="../assets/iconos/LogoLisosNew .png" alt="Logo Lisos">
+  <p class="parrafo-footer">¡No hay viaje que no te cambie algo, <span>atrevete</span>!</p>
+  <div class="iconos-footer d-flex flex-wrap align-items-center justify-content-center ">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-google"></i>
+    </a>
   </div>
-  </footer>
+  <div class="firma-footer">
+    <div class="container">
+    <p>PF Gonzalez Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
+    </span></p>
+    </div>
+</div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -19,39 +19,49 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header>
 <!-- BARRA DE NAVEGACION -->
-<nav class="navbar navbar-expand-lg fixed-top ">
+<nav class="navbar">
   <div class="container-fluid">
-    <a class=" nav-titulo" href="#">LISOS</a>
+    <a class="navbar-brand nav-text" href="#">
+      <img src="../assets/iconos/LogoLisosColorBlue.png" alt="Logo Lisos">
+      LISOS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LISOS</h5>
+        <h5 class="offcanvas-title nav-text" id="offcanvasNavbarLabel">MENÚ</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            <a class="nav-link active nav-text" aria-current="page" href="../index.html">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobremi.html">SOBRE MÍ</a>
+            <a class="nav-link nav-text" href="sobremi.html">SOBRE MÍ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-text" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICIOS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item nav-text" href="alisado.html">ALISADO BIOMOLECULAR</a></li>
+              <li><a class="dropdown-item nav-text" href="balayage.html">BALAYAGE FANTASY</a></li>
+              <li><a class="dropdown-item nav-text" href="hidratacion.html">HIDRATACION PROFUNDA</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+            <a class="nav-link nav-text" href="cotiza.html">COTIZA EN LINEA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./cotiza.html">COTIZA EN LINEA</a>
+            <a class="nav-link nav-text" href="contacto.html">CONTACTO</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contacto.html">CONTACTO</a>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -68,45 +78,50 @@
 <!-- GALERIA -->
     <section class="galeria">
       <div class="galerias-img img-fluid">
-        <img src="../assets/encabezados/Galeria1.png" />
-        <img src="../assets/encabezados/Galeria2.png" />
-        <img src="../assets/encabezados/Galeria3.png" />
-        <img src="../assets/encabezados/Galeria4.png" />
-        <img src="../assets/encabezados/Galeria5.png" />
+        <img src="../assets/encabezados/Galeria1.png" alt="Reseña 1"/>
+        <img src="../assets/encabezados/Galeria2.png" alt="Reseña 2"/>
+        <img src="../assets/encabezados/Galeria3.png" alt="Reseña 3"/>
+        <img src="../assets/encabezados/Galeria4.png" alt="Reseña 4"/>
+        <img src="../assets/encabezados/Galeria5.png" alt="Reseña 5"/>
       </div>
       <div class="galerias-txt">
-        <h3>Soy, <span> Angella </span> y esta es mi pasión</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed voluptas quod temporibus, molestias voluptates laborum sint consectetur eos laboriosam amet eveniet, non esse a minima, pariatur error nesciunt. Magni, numquam!
-          Inventore explicabo ullam doloribus ipsa consectetur? <br> Similique ipsum adipisci a distinctio, illum quasi eaque impedit minima laboriosam nam culpa ipsam voluptate saepe mollitia laborum, porro id? Nam autem hic error!
-          Esse nostrum facilis earum? Doloribus, reprehenderit reiciendis aliquam aspernatur possimus corporis porro autem explicabo perspiciatis beatae ullam! Temporibus numquam iusto omnis. Labore, debitis consequatur similique ab commodi doloribus consectetur. Quibusdam.
+        <h2>Soy, <span> Angella </span> y esta es mi pasión</h2>
+        <p>¡Hola! Soy Angella estilista joven, alegre y extrovertida de Orlando, FL. Combinando técnicas del viejo mundo con la última tecnología para crear resultados superiores para mis clientes.
+          <br>
+          Desde pequeña siempre ame diseñar peinados para mis muñecas y amigas, con el tiempo fui perfeccionando tecnicas y cuestionando muchas otras, naci con el cabello muy rizado y en mi adolescencia la moda era tener el cabello muy liso lo que me hizo dar un giro y aplicarme todo tipo de productos (muy dañinos) todo publicidad y quimicos a full.
+          <br>
+          Con el pasar del tiempo mi cabello se veia maltratado y sin vida fue en ese momento que busque profesionalizarme desde la nutricion del cabello dandole prioridad a lo verdaderamente importante y no solo a verte bien por un dia.
+          <br>
+          Desde entonces me dedico a diseñar melenas sanas, hidratadas y hermosas, respentando la naturaleza. Te invito a vivir esta experiencia de volver la naturalidad a tu cabello!
         </p>
       </div>
     </section>
   </main>
 <!-- FOOTER -->
-  <footer class="seccion-footer">
-    <img class="logo-footer" src="../assets/iconos/logolisos.png" alt="Logo Lisos">
-    <p class="parrafo-footer">¡No hay viaje que no te cambie algo, <span>atrevete</span>!</p>
-    <div class="iconos-footer d-flex flex-wrap align-items-center justify-content-center ">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-facebook"></i>
-      </a>
-      <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-      <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-google"></i>
-      </a>
-    </div>
-    <div class="firma-footer">
-      <p>PreEntrega 3 Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
-      </span></p>
+<footer class="seccion-footer">
+  <img class="logo-footer" src="../assets/iconos/LogoLisosNew .png" alt="Logo Lisos">
+  <p class="parrafo-footer">¡No hay viaje que no te cambie algo, <span>atrevete</span>!</p>
+  <div class="iconos-footer d-flex flex-wrap align-items-center justify-content-center ">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/"target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="https://www.coderhouse.com/"target="_blank" rel="noopener noreferrer">
+      <i class="bi bi-google"></i>
+    </a>
   </div>
-  </footer>
+  <div class="firma-footer">
+    <div class="container">
+    <p>PF Gonzalez Febrero 2023. Diseñado por <span>Juliana Gonzalez &#169;
+    </span></p>
+    </div>
+</div>
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

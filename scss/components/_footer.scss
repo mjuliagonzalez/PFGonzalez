@@ -3,15 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
   min-height: 350px;
   background-color: $colorbtn;
+  padding-top: 1.5rem;
 
   .logo-footer{
-    height: 80px;
-    width: 80px;
-    margin: 10px;
-    border-radius: 50%;
+    width: 140px;
   }
   .parrafo-footer {
     text-align: center;
@@ -20,27 +17,22 @@
     padding: 20px;
     font-size: 1.5rem;
     margin-bottom: 0;
+    color: $colorfsecundary;
 
     span {
       font-weight: bold;
+      color: $colorfsecundary;
     }
   }
 
   .iconos-footer {
 
     a{
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2px;
-      margin: 10px;
-      transition: all 0.2s ease-in;
+      @extend %iconos;
     }
     i {
       transition: all 0.2s ease-in;
-      color: $colorfprimary;
+      color: $colorfsecundary;
       font-size: 2rem;
     }
     a:hover {
@@ -49,23 +41,37 @@
     }
     a:hover i {
       color: rgb(252, 247, 255);
-  }
+    }
   }
   .firma-footer {
-    background-color:$colorfprimary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $colorterciary;
     width: 100%;
-    
+
+    .container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: $colorterciary;
+
     p {
-      color: rgb(252, 247, 255);
-      margin-top: 1rem;
-    }
-    span {
-      font-weight: bold;
-      font-style: italic;
+      text-align: center;
+      letter-spacing: .01em;
       color: $colorfsecundary;
+      font-size: 15px;
+
+    span {
+      color: $colorfterciary;
+      font-weight: 500;
     }
+
+    }
+    }
+    
   }
 }
+

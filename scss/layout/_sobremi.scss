@@ -3,6 +3,7 @@
   margin: 0;
   display: grid;
   place-items: center;
+  padding-bottom: 15px;
   
   .galerias-img {
     display: flex;
@@ -22,10 +23,11 @@
     }
   }
   .galerias-txt {
-    width: 70%;
+    width: 500px;
     line-height: 2;
+    text-align: justify;
     
-    h3 {
+    h2 {
     text-align: center;
     padding: 15px;
     font-style: italic;
@@ -34,6 +36,4 @@
     }
   }
 }
-
 }
-

@@ -1,4 +1,6 @@
 @import "./base/vars";
+@import "./base/mixin";
+@import "./base/extend";
 
 // reset
 @import "./base/reset";
@@ -8,20 +10,19 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/footer";
-
 // body
 @import "./layout/body";
 
 // header
-
+@import "./components/header";
 
 // index
 @import "./layout/index";
 @import "./layout/sobremi";
-@import "./layout/servicios";
 @import "./layout/productos";
 @import "./layout/cotiza";
 @import "./layout/contacto";
+@import "./layout/medias";
 
 
 
